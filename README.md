@@ -1,23 +1,19 @@
 # Bharat-Intern-Task-2
+
 # Movie Recommendation System
-This project implements a movie recommendation system using machine learning algorithms. The system suggests movies to users based on the similarity of movie plots. The recommendation process leverages text processing techniques and similarity measures.
 
-## Features
-### 1.Content-Based Filtering: 
-The system recommends movies similar to the ones the user likes based on the similarity of movie descriptions.
-### 2.Machine Learning Algorithms:
-Utilizes the TfidfVectorizer to transform movie descriptions into numerical vectors and cosine similarity to measure the similarity between these vectors.
-### 3.Efficient Search:
-Uses difflib to find the closest matches to the user's input
+Key steps in the project included:
 
-## Libraries Used
-### NumPy: For numerical operations.
-### Pandas: For data manipulation and analysis.
-### Difflib: For finding close matches in strings.
-### TfidfVectorizer: For transforming text data into numerical vectors based on Term Frequency-Inverse Document Frequency.
-### Cosine Similarity: For measuring the cosine of the angle between two vectors to determine similarity.
+1. *Selecting Relevant Features* for generating recommendations.
+2. *Replacing Null Values* with a null string to maintain data integrity.
+3. *Combining All Selected Features* to create a comprehensive data set for analysis.
+4. *Converting Text Data to Feature Vectors* using TfidfVectorizer.
+5. *Calculating Similarity Scores* using Cosine Similarity to find movies that are alike.
+6. *User Input*: Gathering the movie name from the user.
+7. *Creating a Movie List*: Compiling all movie names from the dataset.
+8. *Finding the Closest Match* for the user-provided movie name.
+9. *Generating Similar Movie List*: Sorting movies based on their similarity score.
+10. *Displaying Recommendations*: Presenting the names of similar movies based on their index.
 
-## How It Works
-### Data Preprocessing: Movie descriptions are converted into TF-IDF vectors.
-### Similarity Calculation: Cosine similarity is calculated between the vector of the input movie and all other movie vectors.
-### Recommendation Generation: The top N movies with the highest similarity scores are recommended to the user.
+Using libraries like *Numpy, **Pandas, **Difflib, **TfidfVectorizer, and **Cosine Similarity*, I was able to develop a robust system that provides relevant movie recommendations with ease. This project not only sharpened my technical skills but also deepened my understanding of recommendation algorithms.
+
